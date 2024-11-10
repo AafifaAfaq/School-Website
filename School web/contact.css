@@ -1,0 +1,114 @@
+/* Contact Page Styles */
+.contact-info {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Contact Item Styling */
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-item p,
+.contact-item ul {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #0056b3;
+}
+
+/* Address Section */
+.contact-item h2::before {
+  content: "📍 ";
+  font-size: 1.5rem;
+}
+
+/* Phone Section */
+.contact-item h2.phone::before {
+  content: "📞 ";
+}
+
+/* Email Section */
+.contact-item h2.email::before {
+  content: "✉️ ";
+}
+
+/* Social Media Section */
+.contact-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-item ul li {
+  margin: 5px 0;
+}
+
+.contact-item ul li a {
+  font-size: 1.1rem;
+}
+
+/* Working Hours Section */
+.contact-item h2.hours::before {
+  content: "🕒 ";
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 15px;
+  }
+
+  .contact-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-item p,
+  .contact-item ul li {
+    font-size: 0.95rem;
+  }
+
+  .contact-item a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 10px;
+  }
+
+  .contact-item h2 {
+    font-size: 1.1rem;
+  }
+
+  .contact-item p,
+  .contact-item ul li {
+    font-size: 0.9rem;
+  }
+
+  .contact-item a {
+    font-size: 0.9rem;
+  }
+}
+

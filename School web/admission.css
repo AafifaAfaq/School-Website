@@ -1,0 +1,92 @@
+
+
+  /* Main Section Styles */
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #02172c;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ee1c1c;
+  }
+  
+  .sec {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  
+  button, .button-link {
+    background-color: #02172c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover, .button-link:hover {
+    background-color: #5e8c9d;
+  }
+  
+  /* FAQ Section */
+  dl {
+    font-size: 1.1rem;
+    color: #0d0227;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+   
+    main {
+      padding: 20px 10px;
+    }
+  
+    section {
+      padding: 15px;
+    }
+  
+    .button-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  

@@ -1,0 +1,303 @@
+
+/* Main Content Styling */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Introduction Section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight {
+    background-color: #a9a3f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #181717;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 500px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #02172c;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.mission, .vision {
+    flex: 1 1 45%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2, .vision h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #02172c;
+}
+
+.mission p, .vision p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Core Values Section */
+.core-values {
+    background-color: #e0e7f3;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.core-values h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #02172c;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.value-item {
+    flex: 1 1 200px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+}
+
+.value-item h3 {
+    font-size: 1.6rem;
+    color: #02172c;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* History Section */
+.history {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #02172c;
+}
+
+.history p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #110557;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    line-height: 1.8;
+}
+
+.cta p a {
+    color: #ffda79;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cta p a:hover {
+    color: #fff;
+}
+
+
+.cta .button-link {
+    font-size: 1.1rem;
+    padding: 12px 24px; 
+    background-color: transparent; /* No background color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.cta .button-link:hover {
+    color: #e9b42f; /* Change color on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #02172c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mission, .vision {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .values-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-item {
+        flex: 1 1 80%;
+    }
+
+    .cta a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .name h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.5rem;
+    }
+
+    .value-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .value-item p {
+        font-size: 0.9rem;
+    }
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1.1rem;
+    }
+
+    .cta .button-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    .cta h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .cta .button-link {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

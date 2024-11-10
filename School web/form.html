@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <header><h1>ABC Secondary School</h1></header>
+    <br />
+    <form>
+      <h1> <i> <u>Student Registration Form</u></i></h1>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+        required
+      />
+      <br />
+      <br />
+      <label for="fname">Father Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter your father name"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <br />
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        required
+      />
+      <br />
+      <br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br />
+      <br />
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <br />
+      <label for="address">Residential Address:</label> <br />
+      <textarea
+        id="address"
+        name="address"
+        rows="5"
+        cols="30"
+        placeholder="Enter residential address"
+        required
+      ></textarea>
+      <br />
+      <br />
+      <label for="courses">Courses:</label>
+      <input type="checkbox" id="math" name="courses" value="math" />
+      <label for="course1">Math</label>
+      <input type="checkbox" id="bio" name="courses" value="bio" />
+      <label for="course2">Biology</label>
+      <input type="checkbox" id="comp" name="courses" value="comp" />
+      <label for="course3">Computer</label>
+      <br />
+      <br />
+      <label for="timing">Time:</label>
+      <select name="timing " id="timing">
+        <option value="morning">Morning (8:00 am- 10:00 am)</option>
+        <option value="afternoon">Afternoon (12:00 pm- 2:00 pm)</option>
+        <option value="evening">Evening (3:00 pm- 5:00 pm)</option>
+        <option value="night">Night (8:00 pm- 10:00 am)</option>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    <br />
+    <a href="./index.html" target="_blank">Go Back</a>
+  </body>
+</html>

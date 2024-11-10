@@ -1,0 +1,222 @@
+
+/* Courses Section */
+.courses-section {
+  padding: 20px;
+  background-color: #dde3e9;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.courses-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Courses Table */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.courses-table th,
+.courses-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.courses-table th {
+  background-color: #02172c;
+  color: #fff;
+}
+
+.courses-table tr:nth-child(even) {
+  background-color: #c3d2e9;
+}
+
+.courses-table tr:hover {
+  background-color: #e0e7ff;
+  transition: background-color 0.3s;
+}
+
+/* Course Description Section */
+.course-description {
+  padding: 20px;
+  background-color: #c5d7f5;
+  color: rgb(26, 20, 43);
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-description h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.course-description ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.course-description li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Course Schedule Section */
+.course-schedule {
+  padding: 20px;
+  background-color: #d9e2f3;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-schedule h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.schedule-week {
+  margin-bottom: 20px;
+}
+
+.schedule-week h3 {
+  color: #02172c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.schedule-week ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+
+.schedule-week li {
+  font-size: 18px;
+}
+
+/* Payment Options Section */
+.payment-options {
+  padding: 20px;
+  background-color: #ffeef3;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.payment-options h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pay-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #573fe0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #021c38;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+#footer {
+  background-color: #02172c;
+  color: #e8ecf1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#email {
+  color: #ffda79;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #573fe0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+  background-color: #021c38;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic img {
+    width: 80%;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .courses-table {
+    font-size: 16px;
+  }
+
+  .pay-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .courses-section h2,
+  .course-description h2,
+  .course-schedule h2,
+  .payment-options h2 {
+    font-size: 24px;
+  }
+
+  .schedule-week h3 {
+    font-size: 18px;
+  }
+
+  .button-link {
+    font-size: 14px;
+  }
+}

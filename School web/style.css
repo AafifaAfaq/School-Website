@@ -1,0 +1,175 @@
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #f0f4f8;
+  color: #180636;
+}
+
+/* Header Styling */
+header {
+  background-color: #02172c;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li a:hover, .active {
+  background-color: #5e8c9d;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.name h1 {
+  font-size: 24px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: #e8ecf1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffda79;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+#about {
+  padding: 20px;
+  text-align: center;
+  background-color: #dde3e9;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pic img {
+  width: 30%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.pic img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+#footer {
+  background-color: #02172c;
+  color: #e8ecf1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#email {
+  color: #ffda79;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #573fe0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+  background-color: #021c38;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic img {
+    width: 80%;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about h2 {
+    font-size: 24px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  .button-link {
+    font-size: 14px;
+  }
+}
